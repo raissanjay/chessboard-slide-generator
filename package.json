@@ -1,0 +1,14 @@
+{
+  "name": "chess-slide-generator",
+  "version": "1.0.0",
+  "description": "Sandbox code to test things for live site",
+  "scripts": {
+    "serve": "serve",
+    "start": "npm run serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^11.3.0"
+  }
+}
