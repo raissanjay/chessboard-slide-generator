@@ -38,10 +38,7 @@
         <h3 style="text-align: center"> Slide Preview </h3>
         <div id="foo" style="width: 400px; margin: 0 auto"></div>
         <button id="next-slide" onclick="addSlide()"> Add next slide </button>
-
-
-
-
+        <div id="slides"></div>
 
         <script src="/third-party-libraries/jquery.js"></script>
         <script src="/third-party-libraries/chessboard-1.0.0.min.js"></script>
@@ -49,8 +46,9 @@
         <script>
             window.currentFen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR"; // starting position
             window.divId = "foo";
-            window.circles = [];
+            window.squares = [];
             window.arrows = [];
+            window.slides = [];
 
             var config = {
                 draggable: true,
@@ -59,7 +57,7 @@
                 onDrop: function(source, target, piece, newPos, oldPos, orientation){
                     window.currentFen = Chessboard.objToFen(newPos);
                     console.log(window.currentFen);
-                    drawBoardDiagram(window.divId, window.currentFen, window.circles, window.arrows);
+                    drawBoardDiagram(window.divId, window.currentFen, window.squares, window.arrows);
                 },
                 sparePieces: true
             };
@@ -72,5 +70,6 @@
         <script src="/dist/drawBoardForSlide.js"></script>
         <script src="/dist/addCircles.js"></script>
         <script src="/dist/addArrows.js"></script>
+        <script src="/dist/addSlide.js"></script>
     </body>
 </html>

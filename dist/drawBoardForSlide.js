@@ -153,4 +153,4 @@ function drawBoardDiagram(divId, fen, squares, arrows){
     return document.getElementById(divId).innerHTML;
 }
 
-drawBoardDiagram(window.divId, window.currentFen, window.circles, window.arrows);
+drawBoardDiagram(window.divId, window.currentFen, window.squares, window.arrows);

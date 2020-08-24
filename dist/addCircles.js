@@ -52,13 +52,13 @@ function newElement() {
             div.style.display = "none";
 
             var coordinate = div.innerText[0] + div.innerText[1];
-            window.circles = window.circles.filter(e => e !== coordinate);
+            window.squares = window.squares.filter(e => e !== coordinate);
 
-            drawBoardDiagram(window.divId, window.currentFen, window.circles, window.arrows)
+            drawBoardDiagram(window.divId, window.currentFen, window.squares, window.arrows)
 
         }
     }
 
-    window.circles.push(inputValue);
-    drawBoardDiagram(window.divId, window.currentFen, window.circles, window.arrows)
+    window.squares.push(inputValue);
+    drawBoardDiagram(window.divId, window.currentFen, window.squares, window.arrows)
 }

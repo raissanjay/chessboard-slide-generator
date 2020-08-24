@@ -63,7 +63,7 @@ function newElement2() {
                 }
             }
 
-            drawBoardDiagram(window.divId, window.currentFen, window.circles, window.arrows)
+            drawBoardDiagram(window.divId, window.currentFen, window.squares, window.arrows)
 
         }
     }
@@ -71,5 +71,5 @@ function newElement2() {
         window.arrows.push(inputValue.split("-"));
     }
 
-    drawBoardDiagram(window.divId, window.currentFen, window.circles, window.arrows)
+    drawBoardDiagram(window.divId, window.currentFen, window.squares, window.arrows)
 }
